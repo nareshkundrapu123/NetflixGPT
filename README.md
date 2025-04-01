@@ -2,7 +2,9 @@
 
 -Create React App
 -Configure TailWindcss
-
+-routing of App
+-Form Validation 
+-useRef Hook
 
 #features
 
