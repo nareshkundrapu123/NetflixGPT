@@ -3,11 +3,12 @@ import Header from './Header'
 import { checkValidData } from '../Utils/Validate';
 import {createUserWithEmailAndPassword ,signInWithEmailAndPassword, updateProfile} from "firebase/auth";
 import {auth} from "../Utils/firebase";
-import {useNavigate } from 'react-router-dom';
+import { USER_AVATAR } from '../Utils/constants';
+
 
 const Login = () => {
 
-  const navigate=useNavigate();
+  
 
   const [isSignInForm, setIsSignInForm]=useState(true);
 
@@ -40,16 +41,18 @@ const Login = () => {
         const user = userCredential.user;
         updateProfile(user, {
           displayName: email.current.value, 
-          photoURL: "https://avatars.githubusercontent.com/u/129973630?v=4&size=64"
+          photoURL: USER_AVATAR
         }).then(() => {
           // Profile updated!
           // ...
+          
+
         }).catch((error) => {
           // An error occurred
           // ...
         });
         console.log(user);
-        navigate("/browse");
+        
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -66,7 +69,7 @@ const Login = () => {
     // Signed in 
     const user = userCredential.user;
     console.log(user);
-    navigate("/browse");
+  
     // ...
   })
   .catch((error) => {
