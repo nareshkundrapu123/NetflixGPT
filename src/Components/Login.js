@@ -3,7 +3,7 @@ import Header from './Header'
 import { checkValidData } from '../Utils/Validate';
 import {createUserWithEmailAndPassword ,signInWithEmailAndPassword, updateProfile} from "firebase/auth";
 import {auth} from "../Utils/firebase";
-import { USER_AVATAR } from '../Utils/constants';
+import { LOGO_URL, USER_AVATAR } from '../Utils/constants';
 
 
 const Login = () => {
@@ -93,7 +93,7 @@ const Login = () => {
         <Header/>
 
     <div className="absolute w-full h-screen">
-       <img className="w-full h-full object-cover" src="https://assets.nflxext.com/ffe/siteui/vlv3/50fcc930-ba3f-4cae-9257-9f920e30a998/web/IN-en-20250310-TRIFECTA-perspective_739387a0-ff14-44ed-a5af-36e5aa4d236e_large.jpg"
+       <img className="w-full h-full object-cover" src={LOGO_URL}
         alt="logo"/>
       
     </div>
