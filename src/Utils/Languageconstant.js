@@ -8,7 +8,7 @@ const lang={
         gptsearchplaceholder:"आज आप क्या देखना चाहेंगे"
     },
     spanish:{
-        Search:"buscar",
+        search:"Buscar",
         gptsearchplaceholder:"¿Qué te gustaría ver hoy?"
     }
 
