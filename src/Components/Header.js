@@ -15,7 +15,7 @@ const Header = () => {
 
     const user=useSelector(store=>store.user)
     const showgptsearch=useSelector(store=>store.gpt.showGptSearch);
-    console.log(showgptsearch);
+    
   const handleSignout=()=>{
     signOut(auth).then(() => {
       // Sign-out successful.
@@ -74,7 +74,7 @@ const Header = () => {
     { user &&(
 
         <div className="flex p-2">
-             {showgptsearch &&   <select className='p-2 m-2 bg-black text-white' onChange={handleLanguagechange}>
+             {showgptsearch &&   <select className='p-2 m-2 bg-black text-white rounded-lg' onChange={handleLanguagechange}>
 
                 {SUPPORTED_LANG.map((lang)=>(
                   <option key={lang.identifier} value={lang.identifier}>
