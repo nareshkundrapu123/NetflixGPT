@@ -26,7 +26,7 @@ const showGptSearch=useSelector(store=>store.gpt.showGptSearch);
           <>
     
     <Maincontainer/>
-      <Secondarycontainer/>
+      <Secondarycontainer/> 
           </>
         )
       }
