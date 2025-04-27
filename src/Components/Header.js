@@ -1,13 +1,13 @@
 import React from 'react'
 import { onAuthStateChanged, signOut } from 'firebase/auth';
-import {auth} from '../Utils/firebase';
+import {auth} from '../Store/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import {addUser, removeUser} from '../Utils/userSlice';
-import { LOGO, SUPPORTED_LANG } from '../Utils/constants';
-import { toggleGptSearchView } from '../Utils/gptSlice';
-import { changelanguage } from '../Utils/Configslice';
+import {addUser, removeUser} from '../Store/userSlice';
+import { toggleGptSearchView } from '../Store/gptSlice';
+import { changelanguage } from '../Store/Configslice';
+import { LOGO, SUPPORTED_LANG } from '../Store/constants';
 const Header = () => {
 
     const navigate=useNavigate();

@@ -1,7 +1,9 @@
 import React from 'react'
 import Gptsearchbar from './Gptsearchbar'
 import Gptmoviesuggestion from './Gptmoviesuggestion'
-import { LOGO_URL } from '../Utils/constants'
+import { LOGO_URL } from '../Store/constants'
+
+
 
 
 const GptSearch = () => {

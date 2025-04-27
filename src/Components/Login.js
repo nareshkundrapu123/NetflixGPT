@@ -1,9 +1,10 @@
 import React, { use, useRef, useState } from 'react'
 import Header from './Header'
-import { checkValidData } from '../Utils/Validate';
+import { checkValidData } from '../Store/Validate';
 import {createUserWithEmailAndPassword ,signInWithEmailAndPassword, updateProfile} from "firebase/auth";
-import {auth} from "../Utils/firebase";
-import { LOGO_URL, USER_AVATAR } from '../Utils/constants';
+import {auth} from "../Store/firebase";
+import { LOGO_URL, USER_AVATAR } from '../Store/constants';
+
 
 
 const Login = () => {

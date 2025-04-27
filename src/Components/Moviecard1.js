@@ -1,5 +1,6 @@
 import React from 'react'
-import { IMG_CDN } from '../Utils/constants';
+import { IMG_CDN } from '../Store/constants';
+
 
 const MovieCard1 = ({poster}) => {
   return (
