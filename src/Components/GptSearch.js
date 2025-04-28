@@ -8,15 +8,20 @@ import { LOGO_URL } from '../Store/constants'
 
 const GptSearch = () => {
   return (
-   <div>
+ <>
+ <div className='fixed -z-10'>
+    <img 
+     className='h-screen object-cover md:h-auto'
+    src={LOGO_URL}
+    alt='LOGO'/>
+  </div>
+   <div className=''>
 
-    <div className='absolute -z-10'>
-      <img alt='LOGO' src={LOGO_URL}/>
-    </div>
+  
     <Gptsearchbar/>
     <Gptmoviesuggestion/>
-    
-   </div>
+      </div>
+      </>
   )
 }
 
